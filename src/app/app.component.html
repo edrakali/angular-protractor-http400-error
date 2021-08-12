@@ -1,0 +1,10 @@
+<h1>{{ title }} </h1>
+<p>After clicking "register", the below error is logged:
+  <br>
+  zone-evergreen.js:2863 POST http://localhost:3000/users/register 400 (Bad Request) 
+  <br>
+  This error causes E2E test to fail
+</p>
+<span id="error">{{ error }}</span>
+<br>
+<button id="register" (click)="register()">Register</button>
