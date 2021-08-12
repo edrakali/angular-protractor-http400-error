@@ -25,7 +25,7 @@ export class HttpService {
       password: '123456',
     }
     console.log("registering service call");
-    return this.http.post<UserModel>('http://localhost:3000/users/register', user);
+    return this.http.post<UserModel>('http://events-api-9053.herokuapp.com/users/register', user);
     // return this.http.post<UserModel>('http://localhost:3000/users/register', user).pipe(
     //   catchError((error: HttpErrorResponse) => {
 
